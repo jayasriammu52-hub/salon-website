@@ -1,258 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Glow & Style Salon | Chennai</title>
-  <meta name="description" content="Glow & Style Salon - Hair, beauty and bridal services in Chennai. Book your appointment today.">
+<title>Glow & Style | Premium Salon Chennai</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<meta name="description"
+content="Glow & Style is a premium beauty salon in Chennai offering hair, facial, bridal makeup and beauty services.">
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #222;
-      background: #fff;
-      line-height: 1.6;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+body{
+  font-family:Arial, sans-serif;
+  background:#fffaf7;
+  color:#241f1c;
+  line-height:1.6;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(255,250,247,.95);
+  border-bottom:1px solid #eaded7;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 15px;
-    }
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
 
-    nav a:hover {
-      color: #f4b6c2;
-    }
+nav a{
+  text-decoration:none;
+  color:#241f1c;
+  margin-left:25px;
+  font-size:14px;
+}
 
-    .hero {
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #fff0f3, #f8e4d8);
-    }
+nav a:hover{
+  color:#a66b4f;
+}
 
-    .hero h1 {
-      font-size: 52px;
-      margin-bottom: 15px;
-    }
+.hero{
+  min-height:100vh;
+  padding:140px 7% 70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+  linear-gradient(rgba(40,25,20,.55),rgba(40,25,20,.55)),
+  url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80")
+  center/cover;
+  color:white;
+}
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
+.hero-content{
+  max-width:800px;
+}
 
-    .btn {
-      display: inline-block;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 13px 25px;
-      border-radius: 30px;
-      margin: 5px;
-    }
+.small-title{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:13px;
+  margin-bottom:15px;
+}
 
-    .btn:hover {
-      background: #444;
-    }
+.hero h1{
+  font-size:64px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
 
-    section {
-      padding: 70px 8%;
-    }
+.hero p{
+  font-size:19px;
+  margin-bottom:30px;
+}
 
-    .title {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 34px;
-    }
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  margin:5px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-    .about {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-    }
+.btn-primary{
+  background:#fff;
+  color:#241f1c;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.btn-outline{
+  border:1px solid white;
+  color:white;
+}
 
-    .card {
-      padding: 25px;
-      border-radius: 15px;
-      background: #fafafa;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
+section{
+  padding:90px 7%;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
 
-    .price {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+.section-title span{
+  color:#a66b4f;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+}
 
-    .contact {
-      text-align: center;
-      background: #fff0f3;
-    }
+.section-title h2{
+  font-size:40px;
+  margin-top:8px;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
+.about{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+}
 
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
-      }
+.services{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
 
-      nav a {
-        margin: 0 6px;
-        font-size: 13px;
-      }
+.card{
+  background:white;
+  padding:30px 22px;
+  text-align:center;
+  border-radius:18px;
+  border:1px solid #eaded7;
+  transition:.3s;
+}
 
-      .hero h1 {
-        font-size: 38px;
-      }
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
 
-      .hero p {
-        font-size: 17px;
-      }
-    }
-  </style>
+.icon{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  margin-bottom:8px;
+}
+
+.price{
+  margin-top:15px;
+  font-size:20px;
+  font-weight:bold;
+  color:#a66b4f;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.gallery img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+.reviews{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.review{
+  background:white;
+  padding:28px;
+  border-radius:18px;
+  border:1px solid #eaded7;
+}
+
+.stars{
+  margin-bottom:12px;
+  font-size:18px;
+}
+
+.review p{
+  margin-bottom:15px;
+}
+
+.booking{
+  text-align:center;
+  background:#30231e;
+  color:white;
+}
+
+.booking h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.booking p{
+  margin-bottom:25px;
+}
+
+.contact-info{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+footer{
+  background:#17110f;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+@media(max-width:900px){
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .reviews{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+}
+
+@media(max-width:600px){
+
+  header{
+    padding:15px 5%;
+  }
+
+  nav a{
+    margin-left:8px;
+    font-size:12px;
+  }
+
+  .logo{
+    font-size:19px;
+  }
+
+  .hero{
+    padding:120px 5% 60px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:65px 5%;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .gallery img{
+    height:230px;
+  }
+
+  .booking h2{
+    font-size:30px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Glow & Style</div>
+<header>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div class="logo">Glow & Style</div>
 
-  <section class="hero" id="home">
-    <div>
-      <h1>Glow. Style. Shine.</h1>
-      <p>Professional Hair & Beauty Salon in Chennai</p>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
 
-      <a class="btn" href="#services">View Services</a>
-      <a class="btn" href="https://wa.me/919999999999" target="_blank">
-        WhatsApp Us
-      </a>
-    </div>
-  </section>
+</header>
 
-  <section id="about">
-    <h2 class="title">About Us</h2>
 
-    <div class="about">
-      <p>
-        Welcome to Glow & Style Salon. We provide professional
-        hair, beauty and bridal services in a comfortable and
-        friendly environment.
-      </p>
+<section class="hero">
 
-      <br>
+<div class="hero-content">
 
-      <p>
-        Our experienced team is here to help you look and feel
-        your best for every occasion.
-      </p>
-    </div>
-  </section>
+<div class="small-title">Premium Beauty Salon • Chennai</div>
 
-  <section id="services">
-    <h2 class="title">Our Services</h2>
+<h1>Beauty That Makes You Glow</h1>
 
-    <div class="services">
+<p>
+Professional hair, beauty and bridal services
+designed to make every occasion special.
+</p>
 
-      <div class="card">
-        <h3>Haircut</h3>
-        <p>Professional haircut & styling.</p>
-        <div class="price">₹399</div>
-      </div>
+<a href="#services" class="btn btn-primary">
+Explore Services
+</a>
 
-      <div class="card">
-        <h3>Hair Spa</h3>
-        <p>Relaxing hair spa treatment.</p>
-        <div class="price">₹799</div>
-      </div>
+<a href="https://wa.me/919999999999"
+target="_blank"
+class="btn btn-outline">
+Book Appointment
+</a>
 
-      <div class="card">
-        <h3>Facial</h3>
-        <p>Premium facial treatment.</p>
-        <div class="price">₹699</div>
-      </div>
+</div>
 
-      <div class="card">
-        <h3>Bridal Makeup</h3>
-        <p>Complete bridal makeup package.</p>
-        <div class="price">₹4,999</div>
-      </div>
+</section>
 
-    </div>
-  </section>
 
-  <section class="contact" id="contact">
-    <h2 class="title">Book Your Appointment</h2>
+<section id="about">
 
-    <p>📍 Chennai, Tamil Nadu</p>
-    <p>📞 +91 99999 99999</p>
-    <p>🕒 Mon - Sun: 10 AM - 8 PM</p>
+<div class="section-title">
+<span>Welcome</span>
+<h2>About Glow & Style</h2>
+</div>
 
-    <br>
+<div class="about">
 
-    <a class="btn"
-       href="https://wa.me/919999999999"
-       target="_blank">
-      Book on WhatsApp
-    </a>
-  </section>
+<p>
+Welcome to Glow & Style, a modern beauty salon in Chennai.
+Our professional team provides personalised hair, skincare
+and beauty services in a comfortable environment.
+</p>
 
-  <footer>
-    <p>© 2026 Glow & Style Salon. All Rights Reserved.</p>
-  </footer>
+<br>
+
+<p>
+Whether it's a regular self-care day or your special wedding
+day, we're here to help you look and feel your best.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<div class="section-title">
+<span>What We Offer</span>
+<h2>Our Services</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<div class="icon">✂️</div>
+<h3>Hair Styling</h3>
+<p>Haircut, styling and professional treatments.</p>
+<div class="price">From ₹399</div>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Facial</h3>
+<p>Relaxing facial treatments for glowing skin.</p>
+<div class="price">From ₹699</div>
+</div>
+
+<div class="card">
+<div class="icon">💆</div>
+<h3>Hair Spa</h3>
+<p>Nourishing treatments for healthy-looking hair.</p>
+<div class="price">From ₹799</div>
+</div>
+
+<div class="card">
+<div class="icon">👰</div>
+<h3>Bridal Makeup</h3>
+<p>Complete bridal makeup for your special day.</p>
+<div class="price">From ₹4,999</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="gallery">
+
+<div class="section-title">
+<span>Our Space</span>
+<h2>Salon Gallery</h2>
+</div>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+
+<section id="reviews">
+
+<div class="section-title">
+<span>Happy Clients</span>
+<h2>What Our Clients Say</h2>
+</div>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+"Very friendly staff and amazing service.
+Loved my haircut!"
+</p>
+<strong>— Priya</strong>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+"Beautiful salon and excellent bridal makeup.
+Highly recommended."
+</p>
+<strong>— Ananya</strong>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+"Clean place, professional service and
+reasonable pricing."
+</p>
+<strong>— Divya</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="booking" id="contact">
+
+<h2>Ready for Your Glow?</h2>
+
+<p>
+Book your appointment today and let our professionals
+take care of the rest.
+</p>
+
+<a href="https://wa.me/919999999999"
+target="_blank"
+class="btn btn-primary">
+💬 WhatsApp Us
+</a>
+
+<div class="contact-info">
+
+<div>📍 Chennai, Tamil Nadu</div>
+<div>📞 +91 99999 99999</div>
+<div>🕒 10 AM – 8 PM</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Glow & Style. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
